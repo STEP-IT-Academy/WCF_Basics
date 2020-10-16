@@ -3,17 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatService", "Chat\ChatService\ChatService\ChatService.csproj", "{BA6CE485-1605-4BC7-B28B-D376E0C5D1D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatService", "ChatService\ChatService.csproj", "{BA6CE485-1605-4BC7-B28B-D376E0C5D1D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleChatHost", "Chat\ChatService\ConsoleChatHost\ConsoleChatHost.csproj", "{3A8B81E0-2E79-486B-9947-B4C02A3843C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleChatHost", "ConsoleChatHost\ConsoleChatHost.csproj", "{3A8B81E0-2E79-486B-9947-B4C02A3843C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsChatClient", "Chat\ChatService\WindowsFormsChatClient\WindowsFormsChatClient.csproj", "{DEAAD1C7-0F93-49C5-A01B-40387F785BB0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServerSide", "ServerSide", "{777A2E64-B4CC-4296-AAF3-A7150CBF1D06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceChatHost", "Chat\ChatService\WindowsServiceChatHost\WindowsServiceChatHost.csproj", "{E4DED562-DE36-4FA1-97BF-75ED53835A81}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClientSide", "ClientSide", "{998ABE7C-5059-4E0A-AAF8-A61CCB00DC93}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server side", "Server side", "{30F34DB1-9E95-444C-99BC-1E60320C3504}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsChatClient", "WindowsFormsChatClient\WindowsFormsChatClient.csproj", "{DEAAD1C7-0F93-49C5-A01B-40387F785BB0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BA6CE485-1605-4BC7-B28B-D376E0C5D1D0} = {BA6CE485-1605-4BC7-B28B-D376E0C5D1D0}
+	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client side", "Client side", "{745D1F7E-59DA-48A3-96B8-ADD0072DE91E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceChatHost", "WindowsServiceChatHost\WindowsServiceChatHost.csproj", "{E4DED562-DE36-4FA1-97BF-75ED53835A81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,12 +45,12 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{BA6CE485-1605-4BC7-B28B-D376E0C5D1D0} = {30F34DB1-9E95-444C-99BC-1E60320C3504}
-		{3A8B81E0-2E79-486B-9947-B4C02A3843C3} = {30F34DB1-9E95-444C-99BC-1E60320C3504}
-		{DEAAD1C7-0F93-49C5-A01B-40387F785BB0} = {745D1F7E-59DA-48A3-96B8-ADD0072DE91E}
-		{E4DED562-DE36-4FA1-97BF-75ED53835A81} = {30F34DB1-9E95-444C-99BC-1E60320C3504}
+		{BA6CE485-1605-4BC7-B28B-D376E0C5D1D0} = {777A2E64-B4CC-4296-AAF3-A7150CBF1D06}
+		{3A8B81E0-2E79-486B-9947-B4C02A3843C3} = {777A2E64-B4CC-4296-AAF3-A7150CBF1D06}
+		{DEAAD1C7-0F93-49C5-A01B-40387F785BB0} = {998ABE7C-5059-4E0A-AAF8-A61CCB00DC93}
+		{E4DED562-DE36-4FA1-97BF-75ED53835A81} = {777A2E64-B4CC-4296-AAF3-A7150CBF1D06}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3B5F236B-471E-4C21-BF2B-69A3800682DC}
+		SolutionGuid = {E8938126-1017-4C0B-9E8B-BE2FB6F44FAB}
 	EndGlobalSection
 EndGlobal
