@@ -1,4 +1,11 @@
-# Write a SOA application that implements chat
-#### The server part of the application must be a WCF service implemented as a dll hosted in the Windows service.
-#### The client must be either a WindowsForms application or a WPF application. Of course, the client must communicate with the service in duplex mode. Starting each client should lead to the creation of a session, within the boundaries of which this client will communicate with the server part. The chat should implement both the "General" chat feature and the ability of clients to communicate in "one-on-one" mode.
-#### Each client should display a list of all active participants. The service should notify all active clients when each client joins the chat and exits the chat.
+# Write a SOA application that implements the TIC-TAC-toe game. 
+#### Players – the two users who connected first, the other users are observers.
+#### The WCF service must be created as a class library with a duplex contract. Service operation:
+1. connecting a player;
+2. disconnection of the player;
+3. attempted move (returns false if the move is not possible);
+4. sending a move.
+#### The callback contract must contain an operation to display the client's progress.
+#### To host the created service create a Windows service.
+#### Implement the client application as a Windows Forms or WPF project.
+#### Provide for the continuation of the game if one of the players is disabled.
