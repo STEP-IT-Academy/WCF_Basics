@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения о сборке можно задать с помощью следующего 
 // атрибутов. Отредактируйте значения этих атрибутов, чтобы изменить
 // связанные со сборкой.
-[assembly: AssemblyTitle("EmptyWcfService")]
+[assembly: AssemblyTitle("PatientsService")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("EmptyWcfService")]
+[assembly: AssemblyProduct("PatientsService")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если данный проект видим для COM
-[assembly: Guid("146dd00f-b4be-449d-a6df-ff9d3b3cc9a1")]
+[assembly: Guid("7810fcd4-4c47-4f61-89cc-ede499b63b91")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //
