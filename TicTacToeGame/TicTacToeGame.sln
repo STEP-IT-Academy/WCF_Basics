@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeService", "TicTacToeService\TicTacToeService.csproj", "{8EB085F9-4BB8-49E2-A771-8C366EDC9B44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServerSide", "ServerSide", "{663D6CE4-857A-4782-9CFB-8166518BF1A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClientSide", "ClientSide", "{D6861B53-7BFF-4D5F-96BE-BD1884D9E564}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeConsoleHost", "TicTacToeConsoleHost\TicTacToeConsoleHost.csproj", "{B46C8B34-8091-413A-A884-017359D1C82C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeWindowsServiceHost", "TicTacToeWindowsServiceHost\TicTacToeWindowsServiceHost.csproj", "{E2214E1F-BD17-491F-A022-249B14448D2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsTicTacToeClient", "WindowsFormsTicTacToeClient\WindowsFormsTicTacToeClient.csproj", "{105ACE0C-96F6-4F3A-BAE9-E3B03F4A3A85}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8EB085F9-4BB8-49E2-A771-8C366EDC9B44} = {8EB085F9-4BB8-49E2-A771-8C366EDC9B44}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{81585B4F-2DB1-471D-B63F-C73F4E56186B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{10EA9A43-4D34-4739-A392-0BEBE9A1B123}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EB085F9-4BB8-49E2-A771-8C366EDC9B44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB085F9-4BB8-49E2-A771-8C366EDC9B44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB085F9-4BB8-49E2-A771-8C366EDC9B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB085F9-4BB8-49E2-A771-8C366EDC9B44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B46C8B34-8091-413A-A884-017359D1C82C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B46C8B34-8091-413A-A884-017359D1C82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B46C8B34-8091-413A-A884-017359D1C82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B46C8B34-8091-413A-A884-017359D1C82C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2214E1F-BD17-491F-A022-249B14448D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2214E1F-BD17-491F-A022-249B14448D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2214E1F-BD17-491F-A022-249B14448D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2214E1F-BD17-491F-A022-249B14448D2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{105ACE0C-96F6-4F3A-BAE9-E3B03F4A3A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{105ACE0C-96F6-4F3A-BAE9-E3B03F4A3A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{105ACE0C-96F6-4F3A-BAE9-E3B03F4A3A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{105ACE0C-96F6-4F3A-BAE9-E3B03F4A3A85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8EB085F9-4BB8-49E2-A771-8C366EDC9B44} = {10EA9A43-4D34-4739-A392-0BEBE9A1B123}
+		{B46C8B34-8091-413A-A884-017359D1C82C} = {81585B4F-2DB1-471D-B63F-C73F4E56186B}
+		{E2214E1F-BD17-491F-A022-249B14448D2F} = {81585B4F-2DB1-471D-B63F-C73F4E56186B}
+		{105ACE0C-96F6-4F3A-BAE9-E3B03F4A3A85} = {D6861B53-7BFF-4D5F-96BE-BD1884D9E564}
+		{81585B4F-2DB1-471D-B63F-C73F4E56186B} = {663D6CE4-857A-4782-9CFB-8166518BF1A4}
+		{10EA9A43-4D34-4739-A392-0BEBE9A1B123} = {663D6CE4-857A-4782-9CFB-8166518BF1A4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D399EFE8-76EF-49EF-816A-B76846AC1000}
+	EndGlobalSection
+EndGlobal
